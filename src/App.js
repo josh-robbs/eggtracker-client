@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 
 import { BrowserRouter, Route, Switch } from "react-router-dom"
-import Home from "./components/Home"
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './components/Home'
 import Fridge from './components/Fridge'
 import Pantry from './components/Pantry'
 import FoodItem from './components/FoodItem'
-import AddFoodItem from './components/AddFoodItem';
+import AddFoodItem from './components/AddFoodItem'
 
 
 
@@ -16,6 +18,7 @@ class App extends Component {
     return(
       <BrowserRouter>
         <div>
+          <Header />
           <Switch>
             <Route path='/' component={Home} exact />
             <Route path='/fridge' component={Fridge} exact />
@@ -23,6 +26,7 @@ class App extends Component {
             <Route path='/foodstuff/:id' component={FoodItem} />
             <Route path='/create' component={AddFoodItem} exact />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     )

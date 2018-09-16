@@ -4,7 +4,7 @@ class UpdateFoodItem extends Component {
   
   render() {
     return (
-      <div className="Home">
+      <div>
         <h2>Update Food Form</h2>
       </div>
     );

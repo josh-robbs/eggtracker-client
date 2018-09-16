@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
-import Header from './Header'
-import Footer from './Footer'
-import FoodItemCard from './FoodItemCard';
+import React, { Component } from 'react'
+import FoodItemCard from './FoodItemCard'
 
 class Pantry extends Component {
   
   render() {
     return (
       <div>
-      <Header />
-      <h2>This is the Pantry Component</h2>
-      <FoodItemCard />
-      <Footer />
+        <h2>This is the Pantry Component</h2>
+        <FoodItemCard />
       </div>
     );
   }
 }
 
-export default Pantry;
+export default Pantry
