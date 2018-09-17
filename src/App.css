@@ -119,6 +119,10 @@ body {
   margin-bottom: 2vw;
 }
 
+.add-button-container {
+  text-decoration: none;
+}
+
 .add-button {
   display: flex;
   flex-direction: column;
@@ -167,4 +171,8 @@ body {
   padding: 3vw;
   border-radius: 5px;
   margin: 2vw 0 45vw 0;
+}
+
+.form-button input:hover {
+  background-color: #56CBF9;
 }

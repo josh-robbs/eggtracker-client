@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 
 
 class Form extends Component {
 
   state = {
-    category: '',
-    brand: '',
-    name: '',
-    img: '',
-    quantity: '',
-    location: ''
+    post: {
+      category: '',
+      brand: '',
+      name: '',
+      img: '',
+      quantity: '',
+      location: ''
+    },
+    redirect: false
   }
 
   handleChange = (event) => {
@@ -17,13 +21,14 @@ class Form extends Component {
     const value = target.value
     const name = target.name
 
-    this.setState({[name]: value});
+    this.setState(
+      {...this.state,post:{...this.state.post,[name]: value}}
+    )
   }
 
   handleSubmit = (event) => {
     event.preventDefault()
-    console.log('submit is firing')
-    const body = JSON.stringify(this.state)
+    const body = JSON.stringify(this.state.post)
     
     fetch('https://eggtrackerapp.herokuapp.com/foodstuff',{
       method: 'POST',
@@ -31,15 +36,28 @@ class Form extends Component {
         "content-type": "application/json"
       },
       body: body
-    })
+      })
+      .then(res => res.status=201 ? this.setRedirect() : console.log('not working'))
     
     event.target.reset()
+  }
+
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
+
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to='/fridge' />
+    }
   }
 
   render(){
     return (
       <div className='form-container'>
-        <form className='form' onSubmit={this.handleSubmit}>
+        <form className='form' onSubmit={this.handleSubmit} >
           <div className='form-div'>
             <label htmlFor='category'>Category:</label>
             <input type='text' name='category' onChange={this.handleChange} />
@@ -68,6 +86,7 @@ class Form extends Component {
             <input type='submit' name='submit' value='Submit' />
           </div>
         </form>
+        {this.renderRedirect()}
       </div>
     )
   }
