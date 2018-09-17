@@ -8,4 +8,4 @@ Project Proposal
 
 [Medium article on Deep Learning and Pi](https://medium.com/nanonets/how-to-easily-detect-objects-with-deep-learning-on-raspberrypi-225f29635c74)
 
-[]
+[Medium article on sticky footers](https://blog.hellojs.org/flexbox-sticky-footer-and-react-d116e4cfca5)

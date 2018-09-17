@@ -6,6 +6,7 @@ Background  - -  #FCFCFC Baby Powder
 Theme - - - - -  #6BF178 Very Light Malachite Green
 Active Font - -  #252627 Raisin Black
 Inactive Font -  #9CAEA9 Dark Medium Gray
+Card Contrast -  #F6F6F6 Lighter Gray
 Accent  - - - -  #56CBF9 Maya Blue 
 
 ## Fonts ##
@@ -14,8 +15,11 @@ Secondary - - - font-family: 'Raleway', sans-serif;
 
 #################### */
 
+body {
+  background-color: #6BF178;
+}
+
 .app {
-  background-color: #FCFCFC;
   font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
@@ -25,7 +29,7 @@ Secondary - - - font-family: 'Raleway', sans-serif;
 .header h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 15vw;
-  color: #6BF178;
+  color: #FCFCFC;
 }
 
 .nav {
@@ -38,6 +42,21 @@ Secondary - - - font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
 
+.card {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.home-card {
+  height: 30vw;
+  margin-bottom: 6vw;
+  background-position: center center;
+  background-size: 110%;
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -48,22 +67,6 @@ Secondary - - - font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
 
-.card {
-  display: flex;
-  align-items: center;
-  height: 30vw;
-  margin-bottom: 6vw;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-  transition: 0.3s;
-  background-position: center center;
-  background-size: 110%;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
-}
-
 .fridge {
   background-image: url('https://kristywicks.com/wp-content/uploads/2018/02/10-Tips-To-Organize-Your-Refrigerator-Kristy-Wicks.3.jpg');
 }
@@ -72,6 +75,31 @@ Secondary - - - font-family: 'Raleway', sans-serif;
   background-image: url('https://homedesignwithstyle.files.wordpress.com/2015/04/kitchen-pantry-organization-pulses-and-dry-goods-1.jpg?w=702&h=239');
 }
 
+.card:hover, .food-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
 
+.food-card {
+  line-height: 0;
+  background-color: #FCFCFC;
+  margin: 0 4vw 6vw 4vw;
+}
 
+.food-card img {
+  box-sizing: border-box;
+  width: 50%;
+  max-height: 34vw;
+  padding: 2vw;
+}
 
+.food-container {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  background-color: #F6F6F6;
+  border-radius: 0 5px 5px 0;
+}
+
+.food-container p {
+  padding-left: 3vw;
+}

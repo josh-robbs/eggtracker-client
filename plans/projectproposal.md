@@ -104,7 +104,7 @@ FUTURE
 
 This does not need to be an exhaustive list. We want you to identify major technologies you will be using. This list may grow or shrink as your project progresses.
 
-* Machine Learning: TensorFlow.js(?), Python
+* Machine Learning: Tracking.js, Python (?), TensorFlow.js(?)
 * Database / Server: Heroku, postgreSQL, Express, Knex 
 * App: React (or React Native)
 * IOT: Raspberry Pi, Python, ...Raspbian(?)
