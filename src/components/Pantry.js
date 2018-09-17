@@ -7,7 +7,6 @@ class Pantry extends Component {
     return (
       <div>
         <h2>This is the Pantry Component</h2>
-        <FoodItemCard />
       </div>
     );
   }
