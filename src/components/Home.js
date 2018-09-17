@@ -7,10 +7,10 @@ class Home extends Component {
     return (
       <div className='home-container'>
         <NavLink to='/fridge'>
-          <div className='card fridge'></div>
+          <div className='card home-card fridge'></div>
         </NavLink>
         <NavLink to='/pantry'>
-          <div className='card pantry'></div>
+          <div className='card home-card pantry'></div>
         </NavLink>
       </div>
     )
