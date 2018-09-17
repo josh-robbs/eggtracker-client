@@ -14,13 +14,17 @@ const Footer = (props) => {
 
 
   return (
-    <div className="card food-card">
-      <img src={props.food.img} alt="Avatar" />
-      <div className="food-container">
+    <div className='card food-card'>
+      <img src={props.food.img} alt={'image of ' + props.food.name} />
+      <div className='food-container'>
         <p><b>{props.food.name}</b></p>
         <p>{quantity}</p>
         <p>{dateAdded} {timeAdded}</p>
         <p><sm><em>{dateUpdated} {timeUpdated}</em></sm></p>
+        <div className='card-button-container'>
+          <button className='card-button update'>Update</button>
+          <button className='card-button delete'>Delete</button>
+        </div>
       </div>
     </div> 
   )

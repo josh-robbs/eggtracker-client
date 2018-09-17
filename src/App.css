@@ -103,3 +103,23 @@ body {
 .food-container p {
   padding-left: 3vw;
 }
+
+.card-button-container {
+  display: flex;
+}
+
+.card-button {
+  margin-bottom: 2vw;
+}
+
+.update, .delete {
+  border-radius: 5px;
+}
+
+.update {
+  background-color: #56CBF9;
+}
+
+.delete:hover {
+  background-color: red;
+}

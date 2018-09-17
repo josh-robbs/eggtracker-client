@@ -29,6 +29,9 @@ class Fridge extends Component {
     return (
       <div>
         {foodList}
+        <div className="card food-card">
+          <h1>Add Item</h1>
+        </div> 
       </div>
     )
   }
