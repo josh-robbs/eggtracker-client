@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import FoodItemCard from './FoodItemCard'
 
 class Pantry extends Component {
   
