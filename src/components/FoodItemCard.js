@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 
 
 const Footer = (props) => {
@@ -20,7 +21,9 @@ const Footer = (props) => {
         <p>{dateAdded} {timeAdded}</p>
         <p><em>{dateUpdated} {timeUpdated}</em></p>
         <div className='card-button-container'>
-          <button className='card-button update'>Update</button>
+          <NavLink to={'/foodstuff/update/' + props.food.id} className='add-button-container'>
+            <button className='card-button update'>Update</button>
+          </NavLink>
           <button id={props.food.id} className='card-button delete' onClick={props.delete}>Delete</button>
         </div>
       </div>
