@@ -3,7 +3,7 @@ Welcome to eggtracker - a great little IOT project to help you keep track of con
 This app was designed and created by me - Josh Robbs!
 
 Deployed App:
-
+https://eggtrackerapp.firebaseapp.com/
 
 
 Client-side code:
