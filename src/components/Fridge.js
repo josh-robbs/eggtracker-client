@@ -14,7 +14,8 @@ class Fridge extends Component {
   }
   
   getTheStuff = () => {
-    fetch('https://eggtrackerapp.herokuapp.com/foodstuff')
+    // fetch('https://eggtrackerapp.herokuapp.com/foodstuff')
+    fetch('http://localhost:8080/foodstuff')
       .then(res => res.json())
       .then(myData => {
         this.setState({foodStuff: myData.food})
@@ -23,7 +24,8 @@ class Fridge extends Component {
 
   deleteFoodItem = (event) => {
     const foodId = event.target.id
-    fetch(`https://eggtrackerapp.herokuapp.com/foodstuff/${foodId}`, {
+    // fetch(`https://eggtrackerapp.herokuapp.com/foodstuff/${foodId}`, {
+    fetch(`http://localhost:8080/foodstuff/${foodId}`, {
       method: 'DELETE'
     })
     .then(this.getTheStuff())

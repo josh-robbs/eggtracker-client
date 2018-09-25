@@ -30,7 +30,8 @@ class Form extends Component {
     event.preventDefault()
     const body = JSON.stringify(this.state.post)
     
-    fetch('https://eggtrackerapp.herokuapp.com/foodstuff',{
+    // fetch('https://eggtrackerapp.herokuapp.com/foodstuff',{
+    fetch('http://localhost:8080/foodstuff',{
       method: 'POST',
       headers: {
         "content-type": "application/json"

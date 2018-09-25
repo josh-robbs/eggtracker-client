@@ -22,7 +22,8 @@ class Update extends Component {
   }
 
   getTheStuff = () => {
-    fetch(`https://eggtrackerapp.herokuapp.com/foodstuff/${this.parseQueryString()}`)
+    // fetch(`https://eggtrackerapp.herokuapp.com/foodstuff/${this.parseQueryString()}`)
+    fetch(`http://localhost:8080/foodstuff/${this.parseQueryString()}`)
       .then(res => res.json())
       .then(myData => {
         console.log('data at update',myData.food)
@@ -51,7 +52,8 @@ class Update extends Component {
     event.preventDefault()
     const body = JSON.stringify(this.state.post)
     
-    fetch(`https://eggtrackerapp.herokuapp.com/foodstuff/${this.parseQueryString()}`,{
+    // fetch(`https://eggtrackerapp.herokuapp.com/foodstuff/${this.parseQueryString()}`,{
+    fetch(`http://localhost:8080/foodstuff/${this.parseQueryString()}`,{
       method: 'PUT',
       headers: {
         "content-type": "application/json"
