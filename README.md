@@ -1,4 +1,4 @@
-#Eggtracker
+# Eggtracker
 
 Welcome to eggtracker - a great little IOT project to help you keep track of consumables in your kitchen!
 
@@ -8,33 +8,35 @@ This project (intended for mobile) was completed using React, Node, Knex, Expres
 " target="_blank"><img src="http://img.youtube.com/vi/yywMZO246X0/0.jpg" 
 alt="Eggtracker Video Demo" width="240" height="180" border="10" /></a>
 
+Reference-style: 
+![Splash Page, Eggtracker](https://github.com/josh-robbs/eggtracker-client/blob/master/public/thumb.png)
 
-###Deployed Frontend App:
+### Deployed Frontend App:
 https://eggtrackerapp.firebaseapp.com/
 
-###Client-side code:
+### Client-side code:
 https://github.com/josh-robbs/eggtracker-client
 
-###Deployed Backend App:
+### Deployed Backend App:
 https://eggtrackerapp.herokuapp.com/foodstuff
 
-###Server-side code:
+### Server-side code:
 https://github.com/josh-robbs/eggtracker-server
 
-###Raspberry Pi code:
+### Raspberry Pi code:
 https://github.com/josh-robbs/eggtracker-pi
 
 
-######Install:
+###### Install:
 Clone the repo.
 `npm install`
 
 
-######Contact Info
+###### Contact Info
 josh.robbs@gmail.com
 
 
-######License
+###### License
 Copyright 2018 Josh Robbs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
