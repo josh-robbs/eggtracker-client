@@ -1,7 +1,25 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
+const tracking = require('../../node_modules/tracking/build/tracking-min')
+
 class FoodItemCard extends Component {
+  state = {}
+
+  componentDidMount(){
+    tracking.ColorTracker.registerColor('eggshell', function(r, g, b) {
+      if (r > 225 && g > 225 && b > 225) {
+        return true;
+      }
+      return false;
+    })
+    
+    var colors = new tracking.ColorTracker(['eggshell'])
+    console.log('colors', colors)
+
+  }
+
+
 
   render() {
     let dateAdded = this.props.food.last_added.slice(0,10)
