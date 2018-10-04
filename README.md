@@ -8,7 +8,7 @@ This project (intended for mobile) was completed using React, Node, Knex, Expres
 " target="_blank"><img src="http://img.youtube.com/vi/yywMZO246X0/0.jpg" 
 alt="Eggtracker Video Demo" width="240" height="180" border="10" /></a>
 
-![Splash Page, Eggtracker](https://github.com/josh-robbs/eggtracker-client/blob/master/public/thumb.png | width=150)
+![Splash Page, Eggtracker](https://github.com/josh-robbs/eggtracker-client/blob/master/public/thumb.png =150x)
 
 ### Deployed Frontend App:
 https://eggtrackerapp.firebaseapp.com/
